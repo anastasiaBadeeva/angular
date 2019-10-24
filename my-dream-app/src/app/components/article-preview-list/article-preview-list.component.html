@@ -1,0 +1,7 @@
+<div *ngFor="let articleItem of list">
+    <a [routerLink]="['articles', articleItem.id]" >   
+         <app-article-preview [article]="articleItem"></app-article-preview>
+        </a>
+
+
+</div>
